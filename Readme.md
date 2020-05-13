@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ehor Ткаченко](https://up.htmlacademy.ru/htmlcss/28/user/161585).
-* Наставник: `Неизвестно`.
+* Наставник: [Magomed Kandaev](https://up.htmlacademy.ru/htmlcss/28/user/161600)
 
 ---
 
