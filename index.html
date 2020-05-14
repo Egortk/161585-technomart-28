@@ -2,11 +2,121 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Интернет-магазин строительных материалов</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header>
+        <section>
+            <a href="index.html">
+                <img src="https://via.placeholder.com/150x100" alt="логотип интернет магазина «Техномарт»">
+            </a>    
+            <input>
+            <button>Закладки</button>
+            <button>Корзина</button>
+            <!-- "Оформить заказ" - пока не понял это отдельная страница или pop-up, 
+            сделал с расчетом на pop-up -->
+            <a href="blank.html">Оформить заказ</a>
+        </section>
+        
+        <p>Интернет-магазин строительных материалов и инструментов для рем</p>
+        
+        <section>
+            <button>+7 (812) 555-05-55</button>
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        </section>
+        
+        <section>
+            <button>Вход</button>
+            <button>Регистрация</button>
+        </section>
+        
+        <nav>
+            <ul>
+                <li><a href="blank.html">Главная</a></li>
+                <li><a href="blank.html">Компания</a></li>
+                <li><a href="blank.html">Каталог</a></li>
+                <li><a href="blank.html">Новости</a></li>
+                <li><a href="blank.html">Спецпредложения</a></li>
+                <li><a href="blank.html">Доставка</a></li>
+                <li><a href="blank.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header> 
+      
+    <main>
+        
+        <h1>Интернет магазин «Техномарт»</h1>
+        <!-- Тут будут блоки отмеченные красным -->
+        
+        <section>
+            <h2>КОМПАНИЯ «Техномарт»</h2>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:</p>
+            <ul>
+                <li>Деловые линии</li>
+                <li>Автотрейдинг</li>
+                <li>ЖелДорЭкспедиция</li>
+                <a href="blank.html">Подробнее о компании</a>
+            </ul>
+        </section>
+            
+        <section>
+            <h2>КОНТАКТЫ</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+            <!-- В место карты поставил тег "span" -->
+            <span></span>
+            <button>Заблудились? НапиШИТЕ НАМ!</button>
+        </section>
+    </main>
+      
+    <footer>
+        <section>
+            <a href="index.html">
+                <img src="https://via.placeholder.com/150x100" alt="логотип интернет магазина «Техномарт»">
+            </a>
+            <!-- Вопрос к нижнему блоку. В макете блок выглядит как один цельный параграф, номер телефона не является кнопкой.
+            Обернул блок в див для дальнейшей стилизации -->
+            <div>
+                <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                <p>+7 (812) 555-05-55</p>
+            </div>
+            <ul>
+                <li><a href="blank.html">Компания</a></li>
+                <li><a href="blank.html">Новости</a></li>
+                <li><a href="blank.html">Каталог</a></li>
+                <li><a href="blank.html">Доставка</a></li>
+                <li><a href="blank.html">Контакты</a></li>
+            </ul>
+            <ul>
+                <li><a href="blank.html">Материалы</a></li>
+                <li><a href="blank.html">Техника</a></li>
+                <li><a href="blank.html">Инструмент</a></li>
+                <li><a href="blank.html">Спецпредложения</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+            <ul>
+                <li><a href="blank.html">Вконтакте</a></li>
+                <li><a href="blank.html">Фейсбук</a></li>
+                <li><a href="blank.html">Инстаграм</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Обратная связь:</p>
+                    mail@htmlacademy.ru
+                </li>
+                <li>
+                    <p>Разработано</p>
+                    htmlacademy.ru
+                </li>
+            </ul>
+        </section>
+    </footer>
+      
   </body>
 </html>
