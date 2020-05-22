@@ -54,7 +54,50 @@
         
         <h1>Перфораторы</h1>
             
-        <!-- Фильтры -->
+        <section>
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <!-- тайтл блока и ползунок для цены -->
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="bosh" id="filter-bosh" checked>
+                            <label for="filter-bosh">Bosh</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interscol" id="filter-interscol">
+                            <label for="filter-interscol">Интерскол</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="makita" id="filter-makita" checked>
+                            <label for="filter-makita">makita</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">Dewalt</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="product-type" value="rechargeable" id="type-rechargeable" checked>
+                            <label for="type-rechargeable">Аккумуляторные</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="product-type" value="network" id="type-network">
+                            <label for="type-network">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        </section>
             
         <section>
             <section>
@@ -228,6 +271,18 @@
             </ul>
         </section>
     </footer>
+    
+    <section>
+        <div>
+            <span>иконка</span>
+            <p>Товар добавлен в корзину!</p>
+        </div>
+        <div>
+            <a href="">оформить заказ</a>
+            <button type="button">Продолжить покупки</button>
+        </div>
+        <button type="button">закрыть</button>
+    </section>  
       
   </body>
 </html>
