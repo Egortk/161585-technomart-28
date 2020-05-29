@@ -15,50 +15,6 @@
     --error: #BA2732;
 }
 
-/* Текстстовые стили */
-
-.paragraph-1 {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 24;
-}
-
-.paragraph-2 {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.paragraph-3 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-}
-
-.paragraph-bold {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
-}
-
-.title-1 {
-    font-size: 36;
-    font-weight: 700;
-    line-height: 36px;
-}a
-
-.title-2 {
-    font-size: 30;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-.title-3 {
-    font-size: 24;
-    font-weight: 700;
-    line-height: 30px;
-}
-
 /* Глобальные */
 
 .page-body {
@@ -81,7 +37,8 @@ img {
   height: auto;
 }
 
-.button-red {
+.button-main {
+    font-family: 'Cuprum', sans-serif;
     color: white;
     font-size: 14px;
     font-weight: 400;
@@ -196,17 +153,18 @@ header ul {
     font-weight: 700;
     line-height: 30px;
     color: var(--basic-red);
-    border: 3px solid white;
+    border: 3px solid var(--global-white);
     
 }
 
 .login-buttons {
+    font-family: 'Cuprum', sans-serif;
     text-align: center;
     border: none;
     font-size: 21px;
     font-weight: 400;
     line-height: 21px;
-    background-color: white;
+    background-color: var(--global-white);
     border: none;
 }
 
@@ -253,7 +211,7 @@ header ul {
     color: var(--basic-greylight);
 }
 
-header address {
+header .address {
     color: #32425C;
     font-size: 14px;
     font-weight: 400;
@@ -286,6 +244,7 @@ header address {
 } 
 
 .about-company p{
+    font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
@@ -365,6 +324,7 @@ footer address {
 /* каталог */
 
 .breadcrumbs {
+    font-family: 'PT Sans', sans-serif;
     list-style: none;
 }
 
@@ -415,7 +375,7 @@ footer address {
     line-height: 18px;
     color: black;
     text-transform: uppercase;
-    background-color: white;
+    background-color: var(--global-white);
     border: 1px solid #E5E5E5;
 }
 
