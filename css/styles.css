@@ -39,7 +39,7 @@ img {
 
 .button-main {
     font-family: 'Cuprum', sans-serif;
-    color: white;
+    color: var(--global-white);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -87,7 +87,7 @@ header {
     background-color: rgba(0,0,0,0.01);
 }
 
-header ul { 
+.main-navigation ul { 
     list-style: none;
 }
 
@@ -165,7 +165,6 @@ header ul {
     font-weight: 400;
     line-height: 21px;
     background-color: var(--global-white);
-    border: none;
 }
 
 .login-buttons:hover {
@@ -201,6 +200,10 @@ header ul {
 
 .user-account-button-addirtional a:active {
     color: var(--basic-greylight);
+}
+
+.login-buttons-group {
+    list-style: none;
 }
 
 .login-buttons:hover {
@@ -260,29 +263,48 @@ header .address {
 /* подвал */
 
 footer {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #F1F5F7;
     background-color: #32425C;
 }
 
-footer ul {
-    list-style: none;
-}
 
-footer address {
+footer .address {
+    color: var(--global-white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
     font-style: normal;
 }
 
+footer .phone {
+    color: var(--global-white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 .footer-menu a{
-    color: white;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--global-white);
+}
+
+.footer-menu{
+    list-style: none;
 }
 
 .catalog-menu a{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
     color: #FFDA96;
 }
 
+.catalog-menu{
+    list-style: none;
+}
 
 .link-interaction:hover{
     text-decoration: underline;
@@ -300,8 +322,20 @@ footer address {
     background-color: #293449;
 }
 
+.copyright {
+    color: #F1F5F7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--global-white);
+}
+
 .bottom a {
     color: #FFDA96;
+}
+
+.socials {
+    list-style: none;
 }
 
 .social {
@@ -314,6 +348,17 @@ footer address {
 
 .social:active {
     background-color: var(--basic-red);
+}
+
+.contacts {
+    list-style: none;
+}
+
+.contact-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--global-white);
 }
 
 .contact-link:active {
