@@ -83,7 +83,7 @@ img {
 
 /* шапка */
 
-header {
+.header {
     background-color: rgba(0,0,0,0.01);
 }
 
@@ -262,7 +262,7 @@ header .address {
 
 /* подвал */
 
-footer {
+.footer {
     background-color: #32425C;
 }
 
