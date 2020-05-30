@@ -13,6 +13,19 @@
     --success: #5FBB2D;
     --warning: #FFBF47;
     --error: #BA2732;
+    --black: #000;
+    
+    --grey-extralight: #EAEAEA;
+    --text-grey-extalight: #A9A9A9;
+    --grey-extradark: #293449; 
+    --grey-dark: #32425C;
+    --grey-extradark-hover: #161D29; 
+    --grey-dark-active: #1D2739; 
+    --link-light: #FFDA96; 
+    --social-button: #212A3A; 
+    --title-background: #F2F6F8; 
+
+—border: #E5E5E5 ;
 }
 
 /* Глобальные */
@@ -52,7 +65,7 @@ img {
 }
 
 .product-card {
-    border: 1px solid #EAEAEA;
+    border: 1px solid var(--grey-extralight);
 }
 
 .product-card:hover {
@@ -67,7 +80,7 @@ img {
 }
 
 .product-card .old-price {
-    color: #A9A9A9;
+    color: var(--text-grey-extalight);
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
@@ -78,7 +91,7 @@ img {
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
-    background-color: #EE3643;
+    background-color: var(--basic-red);
 }
 
 /* шапка */
@@ -95,16 +108,16 @@ img {
     width: 100%;
     height: 47px;
     color: var(--global-white);
-    background-color: #293449;
+    background-color: var(--grey-extradark);
     list-style: none;
 }
 
 .main-header-logo {
-    background: #EE3643 url("../img/logo-body.png");
+    background: var(--basic-red) url("../img/logo-body.png");
 }
 
 .main-header-logo:active {
-    background: #BA2732 url("../img/logo-body-active.png");
+    background: var(--error) url("../img/logo-body-active.png");
 }
 
 .user-meu-button, .main-navigation a {
@@ -116,16 +129,16 @@ img {
 }
 
 .user-meu-button:hover {
-    background-color: #293449;
+    background-color: var(--grey-extradark);
 }
 
 .user-meu-button:active {
     color: rgba(255,255,255,0.5);
-    background-color: #161D29;
+    background-color: var(--grey-extradark-hover);
 }
 
 .full-cart {
-    background-color: #EE3643;
+    background-color: var(--basic-red);
 }
 
 .order-button {
@@ -188,7 +201,7 @@ img {
 }
 
 .user-account-button-addirtional a{
-    color: #32425C;
+    color: var(--grey-dark);
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -215,7 +228,7 @@ img {
 }
 
 header .address {
-    color: #32425C;
+    color: var(--grey-dark);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -225,16 +238,16 @@ header .address {
 .main-navigation {
     text-align: center;
     color: var(--global-white);
-    background: #32425C url("../img/main-nav-background.png");
+    background: var(--grey-dark) url("../img/main-nav-background.png");
     background-repeat: repeat-x;
 }
 
 .main-navigation a:hover {
-   background-color: #293449; 
+   background-color: var(--grey-exradark); 
 }
 
 .main-navigation a:active {
-   background: #1D2739 url("../img/main-nav-body-active.png"); 
+   background: var(--grey-dark-active) url("../img/main-nav-body-active.png"); 
 }
 
 /* О компании */
@@ -263,7 +276,7 @@ header .address {
 /* подвал */
 
 .footer {
-    background-color: #32425C;
+    background-color: var(--grey-dark);
 }
 
 
@@ -299,7 +312,7 @@ footer .phone {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    color: #FFDA96;
+    color: var(--link-light);
 }
 
 .catalog-menu{
@@ -319,7 +332,7 @@ footer .phone {
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    background-color: #293449;
+    background-color: var(--grey-extradark);
 }
 
 .copyright {
@@ -331,7 +344,7 @@ footer .phone {
 }
 
 .bottom a {
-    color: #FFDA96;
+    color: var(--link-light);
 }
 
 .socials {
@@ -339,7 +352,7 @@ footer .phone {
 }
 
 .social {
-    background-color: #212A3A;
+    background-color: var(--social-button);
 }
 
 .social:hover {
@@ -363,7 +376,7 @@ footer .phone {
 
 .contact-link:active {
     opacity: 1;
-    color: #EE3643;
+    color: var(--basic-red);
 }
 
 /* каталог */
@@ -377,7 +390,7 @@ footer .phone {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    color: black;
+    color: var(--black);
     list-style: none;
     text-transform: uppercase;
 }
@@ -386,8 +399,8 @@ footer .phone {
     font-size: 30px;
     font-weight: 400;
     line-height: 30px;
-    color: #32425C;
-    background-color: #F2F6F8;
+    color: var(--grey-dark);
+    background-color: var(--title-background);
 }
 
 .filters ul{
@@ -398,7 +411,7 @@ footer .phone {
     font-size: 17px;
     font-weight: 700;
     line-height: 30px;
-    color: black;
+    color: var(--black);
     text-transform: uppercase;
 }
 
@@ -406,7 +419,7 @@ footer .phone {
     font-size: 15px;
     font-weight: 400;
     line-height: 19px;
-    color: black;
+    color: var(--black);
     text-transform: uppercase;
 }
 
@@ -418,7 +431,7 @@ footer .phone {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    color: black;
+    color: var(--black);
     text-transform: uppercase;
     background-color: var(--global-white);
     border: 1px solid #E5E5E5;
