@@ -14,7 +14,7 @@
     --warning: #FFBF47;
     --error: #BA2732;
     --black: #000;
-    
+    --header-background: rgba(0,0,0,0.01);
     --grey-extralight: #EAEAEA;
     --text-grey-extalight: #A9A9A9;
     --grey-extradark: #293449; 
@@ -24,8 +24,9 @@
     --link-light: #FFDA96; 
     --social-button: #212A3A; 
     --title-background: #F2F6F8; 
-
-—border: #E5E5E5 ;
+    --shadow: rgba(0, 0, 0, 0.15);
+    --border: #E5E5E5 ;
+    --user-menu-active: rgba(255,255,255,0.5);
 }
 
 /* Глобальные */
@@ -69,11 +70,11 @@ img {
 }
 
 .product-card:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--shadow);
 }
 
 .product-card h3 {
-    color: black;
+    color: var(--black);
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -87,7 +88,7 @@ img {
 }
 
 .product-card .actual-price {
-    color: white;
+    color: var(--global-white);
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
@@ -97,7 +98,7 @@ img {
 /* шапка */
 
 .header {
-    background-color: rgba(0,0,0,0.01);
+    background-color: var(--header-background:);
 }
 
 .main-navigation ul { 
@@ -133,7 +134,7 @@ img {
 }
 
 .user-meu-button:active {
-    color: rgba(255,255,255,0.5);
+    color: var(--user-menu-active);
     background-color: var(--grey-extradark-hover);
 }
 
@@ -336,7 +337,7 @@ footer .phone {
 }
 
 .copyright {
-    color: #F1F5F7;
+    color: var(--basic-background);
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
