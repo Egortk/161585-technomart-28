@@ -60,17 +60,17 @@
         <h1 class="main-title">Перфораторы</h1>
             
         <section>
-            <div>
-                Фильтры
+            <div class="filters-title">
+                Фильтр:
             </div>
             <form action="https://echo.htmlacademy.ru" method="get" class="filters">
                 <fieldset>
                     <legend class="filter-title">Цена:</legend>
-                    <input type="range" min="0" max="3500" value="3000" name="price">
+                    <input type="range" min="0" max="3500" value="3000" name="price" class="price">
                     <div>
-                        <output name="min-price">0</output>
+                        <output name="min-price" class="price">0</output>
                         <span>-</span>
-                        <output name="max-price">0</output>
+                        <output name="max-price" class="price">0</output>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -116,21 +116,21 @@
         </section>
             
         <section>
-            <section>
-                <span>Сортировка</span>
+            <section class="sort">
+                <span class="filters-title">Сортировка</span>
                 <ul>
-                    <li><button>По цене</button></li>
-                    <li><button>По типу</button></li>
-                    <li><button>По функционалу</button></li>
+                    <li><button class="sort-button" type="button">По цене</button></li>
+                    <li><button class="sort-button" type="button">По типу</button></li>
+                    <li><button class="sort-button" type="button">По функционалу</button></li>
                 </ul>     
                     
                 <ul>   
-                    <li><button>Вверх</button></li>
-                    <li><button>Вниз</button></li>
+                    <li><button class="sort-button" type="button">Вверх</button></li>
+                    <li><button class="sort-button" type="button">Вниз</button></li>
                 </ul>
             </section>
             
-            <section>
+            <section class="catalog">
                 <ul>
                     <li class="product-card">
                         <a href="">
@@ -140,8 +140,8 @@
                             <h3>Перфоратор BOSCH BFG 6000</h3>
                         </a>
                         <p>
-                            <span>30500 Р.</span>
-                            <span>25500 Р.</span>
+                            <span class="old-price">30500 Р.</span>
+                            <span class="actual-price">25500 Р.</span>
                         </p>
                     </li>
                     <li class="product-card">
@@ -243,24 +243,24 @@
                 </ul>
                 <ul>
                     <li>
-                        <button type="button">1</button>
+                        <button type="button" class="breadcrumbs-button">1</button>
                     </li>
                     <li>
-                        <button type="button">2</button>
+                        <button type="button" class="breadcrumbs-button">2</button>
                     </li>
                     <li>    
-                        <button type="button">3</button>
+                        <button type="button" class="breadcrumbs-button">3</button>
                     </li>
                     <li>    
-                        <button type="button">Следующая</button>
+                        <button type="button" class="breadcrumbs-button">Следующая</button>
                     </li>
                 </ul>
             </section>
             
         </section>
         
-        <section>
-            <h2>Пара слов о перфараторах</h2>
+        <section class="bottom-section">
+            <h2 class="bottom-section-title">Пара слов о перфараторах</h2>
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
     </main>
@@ -306,7 +306,7 @@
         </section>
     </footer>
     
-    <section>
+    <section class="disabled">
         <div>
             <span>иконка</span>
             <p>Товар добавлен в корзину!</p>
