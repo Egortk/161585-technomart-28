@@ -217,13 +217,31 @@ img {
 
 
 .main-navigation ul {
-    padding-top: 16px;
-    padding-bottom: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 
 .main-navigation li{
-    display: inline;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    margin-right: 57px;
+}
+
+.main-navigation {
+    text-align: center;
+    color: var(--global-white);
+    background: var(--grey-dark) url("../img/main-nav-background.png");
+    background-repeat: repeat-x;
+}
+
+.main-navigation a:hover {
+   background-color: var(--grey-extradark); 
+}
+
+.main-navigation a:active {
+   background: var(--grey-dark-active) url("../img/main-nav-body-active.png"); 
 }
 
 .main-header-logo:active {
@@ -308,20 +326,7 @@ img {
     font-style: normal;
 }
 
-.main-navigation {
-    text-align: center;
-    color: var(--global-white);
-    background: var(--grey-dark) url("../img/main-nav-background.png");
-    background-repeat: repeat-x;
-}
 
-.main-navigation a:hover {
-   background-color: var(--grey-extradark); 
-}
-
-.main-navigation a:active {
-   background: var(--grey-dark-active) url("../img/main-nav-body-active.png"); 
-}
 
 /* Страница */
 
@@ -517,13 +522,25 @@ img {
 }
 
 .footer-top {
-    display: grid;
-    grid-template-columns:5fr 7fr;
-    height: 193px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info .main-header-logo {
+    width: 220px;
+    height: 68px;
+    background-image: url()
+}
+
+.contact-info {
+    margin-top: 22px;
+    width: 321px;
+    margin-bottom: 54px;
 }
 
 footer .address {
     color: var(--global-white);
+    font-family: 'Cuprum', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -539,11 +556,14 @@ footer .phone {
 }
 
 .footer-nav{
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 34px;
     margin-top: 37px;
 }
 
 .footer-menu a{
+    display: block
     font-family: 'Cuprum', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -570,7 +590,9 @@ footer .phone {
     display: inline;
 }
 
-.catalog-menu{
+.catalog-menu {
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
 }
 
@@ -584,16 +606,19 @@ footer .phone {
 }
 
 .bottom {
-    height: 107px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     background-color: var(--grey-extradark);
 }
 
+.bottom .container {
+    display: flex;
+    justify-content: space-between
+}
+
 .copyright {
+    width: 227px;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -629,6 +654,8 @@ footer .phone {
 }
 
 .contact-title {
+    margin-right: 13px;
+    margin-left: 38px;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -641,6 +668,7 @@ footer .phone {
 }
 
 /* каталог */
+
 .catalog ul{
     list-style: none;
 }
